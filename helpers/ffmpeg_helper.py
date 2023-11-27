@@ -81,7 +81,7 @@ async def MergeSub(filePath: str, subPath: str, user_id):
             subTrack += 1
     input_files += f"-i '{filePath}' -i '{subPath}' "
     maps += f"-map 1:s "
-    metadata += f"-metadata:s:s:{subTrack} title='Track {subTrack+1} - tg@yashoswalyo' "
+    metadata += f"-metadata:s:s:{subTrack} title='Track {subTrack+1}' "
     subTrack += 1
     LOGGER.info("Sub muxing")
     subprocess.call(
@@ -121,7 +121,7 @@ def MergeSubNew(filePath: str, subPath: str, user_id, file_list):
     for j in range(1, (len(file_list))):
         maps += f"-map {j}:s "
         metadata += (
-            f"-metadata:s:s:{subTrack} title='Track {subTrack+1} - tg@yashoswalyo' "
+            f"-metadata:s:s:{subTrack} title='Track {subTrack+1}' "
         )
         subTrack += 1
     LOGGER.info("Sub muxing")
