@@ -438,7 +438,7 @@ async def about_handler(c: Client, m: Message):
         quote=True,
         reply_markup=InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("Developer", url="https://t.me/yashoswalyo")],
+                [InlineKeyboardButton("Developer", url="https://t.me/Vishnuko1")],
                 [
                     InlineKeyboardButton(
                         "Source Code", url="https://github.com/yashoswalyo/MERGE-BOT"
@@ -588,8 +588,8 @@ async def makeButtons(bot: Client, m: Message, db: dict):
                     ]
                 )
 
-    markup.append([InlineKeyboardButton("🔗 Merge Now", callback_data="merge")])
-    markup.append([InlineKeyboardButton("💥 Clear Files", callback_data="cancel")])
+    markup.append([InlineKeyboardButton("🔗 Merge Now👍", callback_data="merge")])
+    markup.append([InlineKeyboardButton("💥 Clear Files🙁", callback_data="cancel")])
     return markup
 
 
